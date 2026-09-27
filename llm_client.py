@@ -1,9 +1,4 @@
-"""Single lazy-loaded OpenAI client shared by all agents.
 
-The wrapper also records per-run API telemetry when the evaluation harness
-opens a telemetry context. Outside evaluation it behaves like the normal
-OpenAI client and adds no required dependency or API-key work at import time.
-"""
 from functools import lru_cache
 import time
 from openai import OpenAI
