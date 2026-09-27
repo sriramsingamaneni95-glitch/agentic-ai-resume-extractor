@@ -1,20 +1,4 @@
-"""
-Orchestrator — a real stateful agent graph with dynamic routing, PLUS
-an AblationConfig so the evaluation harness (eval/) can independently
-switch off reflection / verification / memory / dynamic routing to
-measure whether each one actually earns its keep.
 
-Dynamic routing decisions made here (when ablation is off):
-  - plan -> clean_text -> extract   IF plan flags the resume as messy/scanned
-  - plan -> extract                 otherwise
-  - extract -> extract (retry)      IF the model's JSON was malformed, up to 3x
-  - validate -> targeted_verification  IF any field confidence is low
-  - validate -> score               otherwise
-  - score node runs intelligence / ATS / JD-match IN PARALLEL (ThreadPoolExecutor)
-
-Run `result["agent_trace"]` after any pipeline run to see which path was
-actually taken for that specific resume - it's not always the same path.
-"""
 import re
 from dataclasses import dataclass
 from concurrent.futures import ThreadPoolExecutor
@@ -34,16 +18,11 @@ from utils.logging_config import logger
 
 @dataclass
 class AblationConfig:
-    """Toggle individual agentic components off, for the ablation study in eval/.
-    All True = full agentic pipeline (the default / production behavior)."""
     enable_reflection: bool = True
     enable_verification: bool = True
     enable_memory: bool = True
-    enable_dynamic_routing: bool = True  # if False: always extract (skip clean_text),
-                                          # never branch to targeted_verification
-
-
-# ---------- Nodes ----------
+    enable_dynamic_routing: bool = True  
+                                          
 
 def node_plan(state: AgentState) -> AgentState:
     state.plan = plan_extraction(state.resume_text)
@@ -52,7 +31,6 @@ def node_plan(state: AgentState) -> AgentState:
 
 
 def node_clean_text(state: AgentState) -> AgentState:
-    """Only reached when the planning agent flags the text as messy/OCR-like."""
     state.resume_text = re.sub(r"[^\x20-\x7E\n]+", " ", state.resume_text)
     logger.info("Cleaned messy/OCR-like text before extraction.")
     return state
@@ -93,7 +71,6 @@ def node_targeted_verification(state: AgentState) -> AgentState:
 
 
 def node_score(state: AgentState) -> AgentState:
-    """Runs independent scoring tasks in PARALLEL instead of sequentially."""
     with ThreadPoolExecutor(max_workers=3) as ex:
         intel_future = ex.submit(compute_resume_intelligence, state.data)
         ats_future = ex.submit(compute_ats_score, state.resume_text, state.jd_text) if state.jd_text else None
@@ -123,18 +100,14 @@ def node_memory(state: AgentState) -> AgentState:
 
 
 def node_noop(state: AgentState) -> AgentState:
-    """Used when a node is ablated away - passes state through unchanged."""
     return state
 
-
-# ---------- Router factory (closures capture the AblationConfig) ----------
 
 def _build_routers(config: AblationConfig) -> dict:
 
     def router_plan(state: AgentState) -> str:
         if not config.enable_dynamic_routing:
-            # Fixed control path for the routing ablation: all optional stages
-            # remain enabled, but no state-dependent branch is allowed.
+           
             return "clean_text"
         return "clean_text" if state.plan.get("is_scanned_or_messy") else "extract"
 
@@ -155,8 +128,7 @@ def _build_routers(config: AblationConfig) -> dict:
         if not config.enable_verification:
             return "score"
         if not config.enable_dynamic_routing:
-            # Fixed control path: verification is always run so the ablation
-            # isolates routing decisions rather than removing verification.
+  
             return "targeted_verification"
         return "targeted_verification" if state.low_confidence_fields else "score"
 
