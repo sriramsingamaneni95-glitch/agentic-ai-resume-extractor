@@ -1,4 +1,3 @@
-"""Point 17: unit tests. These run offline - no OpenAI API calls."""
 from schema import ResumeData, ConfidenceScores
 
 
