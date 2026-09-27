@@ -1,4 +1,7 @@
-
+"""
+Lightweight RAG / Knowledge Base with PERSISTENT storage so the human
+feedback loop can permanently teach it new verified entities.
+"""
 import difflib
 import json
 from pathlib import Path
@@ -6,8 +9,8 @@ from pathlib import Path
 KB_FILE = Path("knowledge_base_store.json")
 
 DEFAULT_KB = {
-    "companies": ["Google", "Microsoft", "Amazon", "Nvidia", "Infosys", "Wipro", "Accenture"],
-    "universities": ["IIT Bombay", "IIT Delhi", "JNTU Hyderabad", "Osmania University", "SRM University"],
+    "companies": ["Google", "Microsoft", "Amazon", "TCS", "Infosys", "Wipro", "Accenture"],
+    "universities": ["IIT Bombay", "IIT Delhi", "JNTU Hyderabad", "Osmania University", "Anna University"],
 }
 
 
@@ -32,6 +35,7 @@ def verify_entity(name: str, kind: str) -> dict:
 
 
 def teach_entity(name: str, kind: str):
+    """Human feedback loop hook: permanently add a human-confirmed entity."""
     kb = _load_kb()
     key = "companies" if kind == "company" else "universities"
     if name and name not in kb[key]:

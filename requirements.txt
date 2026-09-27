@@ -3,3 +3,10 @@ python-dotenv>=1.0.0
 pydantic>=2.7.0
 pytest>=8.0.0
 
+# Optional - only needed for PDF resumes:
+# pymupdf>=1.24.0
+
+# Optional - only needed for OCR on scanned/image-based PDFs:
+# pytesseract>=0.3.10
+# pillow>=10.0.0
+# (also requires the system package: apt install tesseract-ocr)

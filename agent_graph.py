@@ -1,4 +1,12 @@
+"""
+Minimal stateful agent graph — no external dependency (LangGraph-style,
+but hand-rolled so it's easy to read/inspect for an assignment).
 
+Each node is a function(state) -> state.
+Each router is a function(state) -> next_node_name (or "END").
+Routing decisions are made dynamically based on the shared AgentState,
+not a hardcoded linear sequence.
+"""
 from dataclasses import dataclass, field
 from typing import Callable, Optional, Any
 
@@ -10,7 +18,7 @@ class AgentState:
     jd_text: Optional[str] = None
 
     plan: dict = field(default_factory=dict)
-    data: Optional[Any] = None                     
+    data: Optional[Any] = None                     # ResumeData once extracted
     raw_extraction_error: Optional[str] = None
     extraction_attempts: int = 0
 
@@ -19,8 +27,11 @@ class AgentState:
     match_result: Optional[Any] = None
     diff: Optional[dict] = None
     similar_resumes: list = field(default_factory=list)
+    reflection_changed_fields: list = field(default_factory=list)
+    verification_changed_fields: list = field(default_factory=list)
 
-    log: list = field(default_factory=list)        
+    log: list = field(default_factory=list)         # trace of nodes actually visited
+
     def trace(self, node_name: str):
         self.log.append(node_name)
 
