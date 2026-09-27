@@ -12,7 +12,7 @@ from orchestrator import run_pipeline, AblationConfig
 from eval.baseline import run_baseline
 from eval.metrics import field_level_scores, overall_accuracy, exact_record_match, estimate_cost_usd, aggregate
 from eval.telemetry import start_run, end_run
-
+from tools.pdf_parser import parse_pdf
 DATASET_DIR = Path(__file__).parent / "dataset"
 RESULTS_DIR = Path(__file__).parent / "results"
 MODEL_NAME = "gpt-4.1"
@@ -28,9 +28,27 @@ VARIANTS = {
 
 
 def load_dataset():
-    ground_truth = json.loads((DATASET_DIR / "ground_truth.json").read_text(encoding="utf-8"))
-    return [{"filename": f, "text": (DATASET_DIR / f).read_text(encoding="utf-8"), "ground_truth": gt}
-            for f, gt in ground_truth.items()]
+    ground_truth = json.loads(
+        (DATASET_DIR / "ground_truth.json").read_text(encoding="utf-8")
+    )
+
+    dataset = []
+
+    for filename, gt in ground_truth.items():
+        path = DATASET_DIR / filename
+
+        if path.suffix.lower() == ".pdf":
+            text = parse_pdf(str(path))
+        else:
+            text = path.read_text(encoding="utf-8")
+
+        dataset.append({
+            "filename": filename,
+            "text": text,
+            "ground_truth": gt,
+        })
+
+    return dataset
 
 
 def score_result(predicted, ground_truth):
