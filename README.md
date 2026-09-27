@@ -18,12 +18,7 @@ anything comes back uncertain, a targeted verification agent — or a human —
 steps in. Scoring, ATS matching, and JD comparison all run in parallel.
 Every decision is traced, every version is remembered.
 
-## Demo
 
-![Sample run](docs/demo-run.svg)
-
-*(Illustrative sample output — run `python app.py` on your own resume to
-generate a real `agent_trace` and `output.json`.)*
 
 ---
 
