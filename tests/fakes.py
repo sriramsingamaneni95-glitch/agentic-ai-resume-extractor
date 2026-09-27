@@ -1,9 +1,4 @@
-"""
-Shared fake OpenAI client for integration tests. Lets the full agent graph
-run end-to-end with no real network/API call, by intercepting at the
-`llm_client.OpenAI` class itself (get_client() calls OpenAI(), so patching
-the class works no matter which agent module imported get_client).
-"""
+
 import json
 
 
@@ -45,8 +40,7 @@ class FakeCompletions:
         self.extraction_json = extraction_json
 
     def create(self, **kwargs):
-        # Happy-path fake: model returns the final JSON directly with no
-        # tool calls. See test_integration.py for a tool-call round-trip test.
+      
         return FakeChatResponse(FakeMessage(content=self.extraction_json, tool_calls=None))
 
 
@@ -57,7 +51,7 @@ class FakeChat:
 
 class FakeResponses:
     def __init__(self, responder):
-        self.responder = responder  # callable(kwargs) -> output_text string
+        self.responder = responder  
 
     def create(self, **kwargs):
         return FakeResponsesResponse(self.responder(kwargs))
@@ -76,8 +70,6 @@ class FakeOpenAIClient:
 
 
 def make_responder(extraction_json: str):
-    """Routes each responses.create() call to the right canned answer by
-    sniffing a unique marker string from each agent's own prompt template."""
     def responder(kwargs):
         text = str(kwargs.get("input", "")).lower()
         if "planning agent" in text:
@@ -86,9 +78,9 @@ def make_responder(extraction_json: str):
                 "language": "en", "notes": "",
             })
         if "re-check it against" in text:
-            return extraction_json  # reflection agrees, no changes
+            return extraction_json  
         if "focus only on" in text:
-            return "{}"  # targeted verification - not exercised in happy path
+            return "{}"  
         if "compare this candidate" in text:
             return json.dumps({
                 "fit_score": 82, "reasoning": "Strong skills overlap.",
