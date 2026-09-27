@@ -1,10 +1,3 @@
-"""
-Prompt regression tests: guard against someone silently editing a prompt
-template in a way that breaks its contract with the rest of the system
-(e.g. removing a schema field, dropping the "JSON only" instruction, or
-changing a tool name the code depends on). These don't call the API -
-they check the prompt TEMPLATES themselves stay structurally intact.
-"""
 from agents.extraction_agent import SYSTEM_PROMPT, TOOLS
 from agents.planning_agent import PLANNING_PROMPT
 from agents.reflection_agent import REFLECTION_PROMPT
