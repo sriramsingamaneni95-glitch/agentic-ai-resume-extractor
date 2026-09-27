@@ -1,10 +1,5 @@
 from __future__ import annotations
-"""Per-run API telemetry used by the experimental validation harness.
 
-This is deliberately lightweight: production agents keep using the normal
-OpenAI client, while the shared client wrapper records model calls, tokens,
-latency, and errors whenever an evaluation run opens a telemetry context.
-"""
 from contextvars import ContextVar
 from dataclasses import dataclass, field
 import time
