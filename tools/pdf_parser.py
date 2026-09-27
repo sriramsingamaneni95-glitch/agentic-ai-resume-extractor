@@ -1,19 +1,12 @@
-"""
-Tool: extract raw text from a PDF resume, with an OCR fallback for
-scanned/image-based PDFs (no extractable text layer).
 
-Requires: pip install pymupdf
-OCR path additionally requires: pip install pytesseract pillow
-  + the system 'tesseract' binary installed (apt install tesseract-ocr)
-"""
 from utils.logging_config import logger
 
-MIN_CHARS_PER_PAGE_BEFORE_OCR = 20  # below this, assume the page is scanned/image-only
+MIN_CHARS_PER_PAGE_BEFORE_OCR = 20
 
 
 def parse_pdf(path: str, allow_ocr: bool = True) -> str:
     try:
-        import fitz  # PyMuPDF
+        import fitz 
     except ImportError:
         raise ImportError("Run: pip install pymupdf")
 
@@ -44,15 +37,13 @@ def parse_pdf(path: str, allow_ocr: bool = True) -> str:
 
 
 def _ocr_page(page) -> str:
-    """Render a PDF page to an image and run OCR on it. Fails soft (returns '')."""
     try:
         import pytesseract
         from PIL import Image
         import io
     except ImportError:
         logger.warning(
-            "OCR skipped: run 'pip install pytesseract pillow' and install the "
-            "'tesseract-ocr' system package to enable scanned-resume support."
+           
         )
         return ""
 
