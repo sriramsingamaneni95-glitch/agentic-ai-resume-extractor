@@ -1,4 +1,4 @@
-# 🤖 Agentic AI Resume Extractor — Experimental Validation
+# 🤖 Agentic AI Resume Extractor 
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/LLM-GPT--4.1-412991?logo=openai&logoColor=white)
