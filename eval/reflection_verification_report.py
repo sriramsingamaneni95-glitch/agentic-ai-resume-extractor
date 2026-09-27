@@ -1,10 +1,4 @@
-"""Measure whether reflection/verification edits actually helped.
 
-A correction is counted for every changed atomic metric, not merely top-level
-fields. Improved/regressed/neutral is determined against ground truth by
-comparing the full run with the matching one-component ablation on the same
-resume.
-"""
 import json
 from pathlib import Path
 from eval.metrics import field_level_scores
@@ -30,7 +24,6 @@ def analyze(changed_key, full_variant, ablated_variant, rows, ground_truth, agen
         fs = field_level_scores(fr["predicted"], ground_truth[fname])
         as_ = field_level_scores(ar["predicted"], ground_truth[fname])
         for field in changed:
-            # A top-level changed field may correspond to several nested atomic metrics.
             keys = [k for k in fs if k == field or k.startswith(field + ":")]
             for key in keys:
                 counts["corrections_made"] += 1
