@@ -1,9 +1,4 @@
-"""One-command experimental validation harness.
 
-Runs the same 50-resume dataset through a non-agentic baseline, full agentic
-pipeline, and four one-component ablations. Every run records accuracy,
-failure rate, latency, model calls, token usage, estimated cost, and trace.
-"""
 import json
 import sys
 import time
