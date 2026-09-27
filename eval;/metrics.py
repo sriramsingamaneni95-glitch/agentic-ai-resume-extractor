@@ -1,12 +1,3 @@
-"""Reproducible field-level metrics for experimental validation.
-
-Atomic fields are scored independently, including nested experience and
-education fields. Expected missing values are handled correctly. Lists use
-set Jaccard where ordering is not semantically important. In addition to the
-macro average, the harness reports exact-record accuracy: the percentage of
-resumes for which every scored field is correct.
-"""
-
 PRICE_PER_1K_INPUT = 0.002
 PRICE_PER_1K_OUTPUT = 0.008
 
@@ -32,8 +23,7 @@ def _jaccard(a: list, b: list) -> float:
 def _list_records(pred, gt, key_fields):
     pred = pred or []
     gt = gt or []
-    # Match records by the strongest identity field. Extra/missing records are
-    # penalized through the corresponding list score and unmatched record fields.
+    
     identity = key_fields[0]
     pred_by_id = {_norm(x.get(identity)): x for x in pred if x.get(identity)}
     gt_by_id = {_norm(x.get(identity)): x for x in gt if x.get(identity)}
