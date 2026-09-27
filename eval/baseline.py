@@ -6,6 +6,13 @@ from schema import ResumeData
 from utils.retry import clean_json_text
 
 
+BASELINE_PROMPT = """Extract this resume into valid JSON matching the ResumeData schema.
+Do not invent information. Return only JSON.
+
+Resume:
+{resume_text}
+"""
+
 def run_baseline(resume_text: str) -> dict:
     client = get_client()
     start = time.time()
