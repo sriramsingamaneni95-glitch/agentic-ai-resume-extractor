@@ -1,21 +1,9 @@
-"""
-Targeted Verification Agent — dynamically invoked ONLY for fields that came
-back low-confidence, instead of re-running the whole pipeline. This is the
-'targeted verification agent' from the review feedback.
-"""
+
 import json
 from llm_client import get_client
 from schema import ResumeData
 from utils.retry import clean_json_text, retry_on_failure
 from utils.logging_config import log_call, log_token_usage
-
-VERIFY_PROMPT = """Focus ONLY on re-extracting these specific fields as carefully
-as possible by re-reading the original resume text: {fields}
-Return ONLY a JSON object containing just these field names as keys.
-
-Original resume:
-{resume_text}
-"""
 
 
 @log_call
@@ -39,5 +27,5 @@ def verify_low_confidence_fields(data: ResumeData, resume_text: str, fields: lis
         if hasattr(updated, field_name):
             setattr(updated, field_name, value)
             if field_name in updated.confidence_scores.model_fields:
-                setattr(updated.confidence_scores, field_name, 0.9)  # boosted post-verification
+                setattr(updated.confidence_scores, field_name, 0.9)  
     return updated
