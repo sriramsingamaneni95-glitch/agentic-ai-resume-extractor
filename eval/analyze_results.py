@@ -1,9 +1,3 @@
-"""Turn raw experimental results into trace and root-cause evidence.
-
-The script never invents explanations. Root-cause labels are assigned only
-when the recorded trace/error provides enough evidence; otherwise the case is
-marked "undetermined" for human review.
-"""
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
