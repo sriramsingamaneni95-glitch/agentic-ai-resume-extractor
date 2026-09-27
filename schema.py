@@ -1,7 +1,4 @@
-"""
-Pydantic schema for guaranteed structured output (Point 5: JSON Schema validation).
-Also carries confidence scores (Point 6) and resume intelligence fields (Point 13).
-"""
+
 from pydantic import BaseModel, Field
 from typing import Optional, List
 
@@ -34,10 +31,10 @@ class ConfidenceScores(BaseModel):
 
 class ResumeIntelligence(BaseModel):
     total_experience_years: Optional[float] = None
-    seniority_level: Optional[str] = None          # Junior / Mid / Senior / Lead
+    seniority_level: Optional[str] = None         
     leadership_indicators: List[str] = Field(default_factory=list)
     career_progression_summary: Optional[str] = None
-    skill_categories: dict = Field(default_factory=dict)  # e.g. {"languages": [...], "tools": [...]}
+    skill_categories: dict = Field(default_factory=dict)  
 
 
 class ResumeData(BaseModel):
@@ -50,7 +47,7 @@ class ResumeData(BaseModel):
     education: List[Education] = Field(default_factory=list)
     confidence_scores: ConfidenceScores = Field(default_factory=ConfidenceScores)
     intelligence: Optional[ResumeIntelligence] = None
-    verified_entities: dict = Field(default_factory=dict)   # filled by RAG/knowledge base agent
+    verified_entities: dict = Field(default_factory=dict)  
 
 
 class MatchResult(BaseModel):
