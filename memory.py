@@ -1,7 +1,4 @@
-"""
-Memory module (Point 9): stores each run's output and diffs it against
-the previous version for the same resume file.
-"""
+
 import json
 from pathlib import Path
 from datetime import datetime
