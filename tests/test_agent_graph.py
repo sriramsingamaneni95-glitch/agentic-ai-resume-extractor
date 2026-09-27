@@ -1,4 +1,4 @@
-"""Tests for the dynamic routing logic itself (offline, no API calls)."""
+
 from agent_graph import AgentGraph, AgentState
 from orchestrator import _build_routers, AblationConfig
 
@@ -25,7 +25,7 @@ def test_router_plan_uses_fixed_path_when_dynamic_routing_disabled():
     routers = _routers(enable_dynamic_routing=False)
     state = AgentState(resume_text="x")
     state.plan = {"is_scanned_or_messy": False}
-    assert routers["plan"](state) == "clean_text"  # fixed control path
+    assert routers["plan"](state) == "clean_text"  
 
 
 def test_router_extract_retries_on_error():
@@ -68,7 +68,7 @@ def test_router_validate_routes_to_score_when_confident():
 def test_router_validate_skips_verification_when_ablated():
     routers = _routers(enable_verification=False)
     state = AgentState(resume_text="x")
-    state.low_confidence_fields = ["email"]  # would normally trigger verification
+    state.low_confidence_fields = ["email"]  
     assert routers["validate"](state) == "score"
 
 
