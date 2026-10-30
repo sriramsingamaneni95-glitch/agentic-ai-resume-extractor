@@ -5,6 +5,21 @@ from schema import ResumeData
 from utils.retry import clean_json_text, retry_on_failure
 from utils.logging_config import log_call, log_token_usage
 
+VERIFY_PROMPT = """
+You are a careful resume verification agent.
+
+Review the extracted resume fields listed below against the original resume text.
+Correct a field only when the original resume text supports the correction.
+Do not invent missing information. Preserve the existing values when evidence is insufficient.
+
+Fields to verify: {fields}
+
+Original resume text:
+{resume_text}
+
+Return ONLY a valid JSON object containing the corrected fields.
+Use the exact field names from the ResumeData schema.
+"""
 
 @log_call
 @retry_on_failure(max_attempts=2)

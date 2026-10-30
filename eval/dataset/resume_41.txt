@@ -1,0 +1,7 @@
+Aarav Sharma
+Contact: aarav.1@example.com / +91-9000000140
+Profile: Data Analyst with experience in Python, SQL, Excel.
+Skills: Python, SQL, Excel, Pandas
+Career: 2018-05 Northstar Analytics Data Analyst; moved into Data Analyst in 2023-05.
+Education: SRM University - B.Tech Computer Science (2018)
+Note: source record defines the canonical interval.

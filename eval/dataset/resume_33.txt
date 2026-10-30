@@ -1,0 +1,5 @@
+Rohan Patel
+Email: rohan.3@example.com
+Skills: Python, TensorFlow
+Experience: ML Engineer at Vertex Labs, 2020-06-2024-06
+Education: M.Tech Data Science, VIT University, 2020

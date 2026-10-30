@@ -1,0 +1,7 @@
+Meera Sharma
+Contact: meera.6@example.com / +91-9000000145
+Profile: Backend Developer with experience in Java, Spring Boot, PostgreSQL.
+Skills: Java, Spring Boot, PostgreSQL, Docker
+Career: 2018-01 Nimbus Health Backend Developer; moved into Backend Developer in current period.
+Education: SRM University - B.Tech Computer Science (2018)
+Note: source record defines the canonical interval.

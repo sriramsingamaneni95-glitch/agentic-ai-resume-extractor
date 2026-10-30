@@ -1,0 +1,9 @@
+NAME: Diya Reddy
+EMAIL: diya.2@example.com
+PHONE: +91-9000000101
+SUMMARY: Software Engineer with experience in Python, Java, Git.
+SKILLS: Python, Java, Git, REST APIs
+EXPERIENCE:
+- Software Engineer | BluePeak Systems | 2019-02 | 2023-02 | Built and maintained data and software solutions.
+EDUCATION:
+- B.Sc Computer Science | University of Hyderabad | 2019

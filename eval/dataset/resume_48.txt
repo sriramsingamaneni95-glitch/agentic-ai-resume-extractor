@@ -1,0 +1,7 @@
+Nisha Patel
+Contact: nisha.8@example.com / +91-9000000147
+Profile: Product Analyst with experience in SQL, Python, Tableau.
+Skills: SQL, Python, Tableau, Power BI
+Career: 2020-03 Atlas Consulting Product Analyst; moved into Product Analyst in 2024-03.
+Education: VIT University - M.Tech Data Science (2020)
+Note: source record defines the canonical interval.

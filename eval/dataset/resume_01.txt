@@ -1,0 +1,9 @@
+NAME: Aarav Sharma
+EMAIL: aarav.1@example.com
+PHONE: +91-9000000100
+SUMMARY: Data Analyst with experience in Python, SQL, Excel.
+SKILLS: Python, SQL, Excel, Pandas
+EXPERIENCE:
+- Data Analyst | Northstar Analytics | 2018-01 | present | Built and maintained data and software solutions.
+EDUCATION:
+- B.Tech Computer Science | SRM University | 2018

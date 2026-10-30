@@ -1,0 +1,7 @@
+*** RESUME 12 ***
+DIYA REDDY | diya.2@example.com | +91-9000000111
+Summary:: Software Engineer with experience in Python, Java, Git.
+SKILLS >> Python / Java / Git / REST APIs
+WORK>> BluePeak Systems -- Software Engineer (2019-03 to 2024-03) -- Built and maintained data and software solutions.
+EDU >> University of Hyderabad; B.Sc Computer Science; 2019
+Noise: ### ## tabs ---

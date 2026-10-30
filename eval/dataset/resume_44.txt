@@ -1,0 +1,7 @@
+Anika Iyer
+Contact: anika.4@example.com / +91-9000000143
+Profile: Business Analyst with experience in SQL, Power BI, Excel.
+Skills: SQL, Power BI, Excel, Tableau
+Career: 2021-08 Orion Digital Business Analyst; moved into Business Analyst in 2023-08.
+Education: Anna University - B.E. Information Technology (2021)
+Note: source record defines the canonical interval.

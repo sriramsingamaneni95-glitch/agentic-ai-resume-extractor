@@ -1,0 +1,7 @@
+Rohan Patel
+Contact: rohan.3@example.com / +91-9000000142
+Profile: ML Engineer with experience in Python, TensorFlow, PyTorch.
+Skills: Python, TensorFlow, PyTorch, Machine Learning
+Career: 2020-07 Vertex Labs ML Engineer; moved into ML Engineer in current period.
+Education: VIT University - M.Tech Data Science (2020)
+Note: source record defines the canonical interval.

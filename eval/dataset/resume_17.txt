@@ -1,0 +1,7 @@
+*** RESUME 17 ***
+KIRAN REDDY | kiran.7@example.com | +91-9000000116
+Summary:: QA Engineer with experience in Selenium, Python, SQL.
+SKILLS >> Selenium / Python / SQL / Jira
+WORK>> Pioneer Tech -- QA Engineer (2019-08 to 2023-08) -- Built and maintained data and software solutions.
+EDU >> University of Hyderabad; B.Sc Computer Science; 2019
+Noise: ### ## tabs ---

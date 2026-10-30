@@ -1,0 +1,7 @@
+Kiran Reddy
+Contact: kiran.7@example.com / +91-9000000146
+Profile: QA Engineer with experience in Selenium, Python, SQL.
+Skills: Selenium, Python, SQL, Jira
+Career: 2019-02 Pioneer Tech QA Engineer; moved into QA Engineer in 2023-02.
+Education: University of Hyderabad - B.Sc Computer Science (2019)
+Note: source record defines the canonical interval.

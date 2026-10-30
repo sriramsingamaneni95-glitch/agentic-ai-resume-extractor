@@ -1,0 +1,9 @@
+NAME: Meera Sharma
+EMAIL: meera.6@example.com
+PHONE: +91-9000000105
+SUMMARY: Backend Developer with experience in Java, Spring Boot, PostgreSQL.
+SKILLS: Java, Spring Boot, PostgreSQL, Docker
+EXPERIENCE:
+- Backend Developer | Nimbus Health | 2018-06 | 2024-06 | Built and maintained data and software solutions.
+EDUCATION:
+- B.Tech Computer Science | SRM University | 2018

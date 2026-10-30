@@ -1,0 +1,9 @@
+NAME: Tara Rao
+EMAIL: tara.10@example.com
+PHONE: +91-9000000109
+SUMMARY: AI Engineer with experience in Python, LLMs, TensorFlow.
+SKILLS: Python, LLMs, TensorFlow, FastAPI
+EXPERIENCE:
+- AI Engineer | Summit Cloud | 2022-01 | present | Built and maintained data and software solutions.
+EDUCATION:
+- M.Sc Computer Science | Andhra University | 2022

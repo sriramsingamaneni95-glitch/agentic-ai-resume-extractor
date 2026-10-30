@@ -1,0 +1,7 @@
+Diya Reddy
+Contact: diya.2@example.com / +91-9000000141
+Profile: Software Engineer with experience in Python, Java, Git.
+Skills: Python, Java, Git, REST APIs
+Career: 2019-06 BluePeak Systems Software Engineer; moved into Software Engineer in 2024-06.
+Education: University of Hyderabad - B.Sc Computer Science (2019)
+Note: source record defines the canonical interval.

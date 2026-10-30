@@ -1,0 +1,5 @@
+Aarav Sharma
+Email: aarav.1@example.com
+Skills: Python, SQL
+Experience: Data Analyst at Northstar Analytics, 2018-04-present
+Education: B.Tech Computer Science, SRM University, 2018

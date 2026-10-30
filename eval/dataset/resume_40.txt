@@ -1,0 +1,5 @@
+Tara Rao
+Email: tara.10@example.com
+Skills: Python, LLMs
+Experience: AI Engineer at Summit Cloud, 2022-04-present
+Education: M.Sc Computer Science, Andhra University, 2022

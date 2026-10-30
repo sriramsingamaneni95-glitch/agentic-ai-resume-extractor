@@ -1,0 +1,7 @@
+*** RESUME 15 ***
+VIKRAM RAO | vikram.5@example.com | +91-9000000114
+Summary:: Data Scientist with experience in Python, Scikit-learn, SQL.
+SKILLS >> Python / Scikit-learn / SQL / Statistics
+WORK>> Cedar Finance -- Data Scientist (2022-06 to 2024-06) -- Built and maintained data and software solutions.
+EDU >> Andhra University; M.Sc Computer Science; 2022
+Noise: ### ## tabs ---

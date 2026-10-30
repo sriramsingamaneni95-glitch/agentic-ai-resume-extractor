@@ -1,0 +1,5 @@
+Diya Reddy
+Email: diya.2@example.com
+Skills: Python, Java
+Experience: Software Engineer at BluePeak Systems, 2019-05-2023-05
+Education: B.Sc Computer Science, University of Hyderabad, 2019

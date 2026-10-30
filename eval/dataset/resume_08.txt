@@ -1,0 +1,9 @@
+NAME: Nisha Patel
+EMAIL: nisha.8@example.com
+PHONE: +91-9000000107
+SUMMARY: Product Analyst with experience in SQL, Python, Tableau.
+SKILLS: SQL, Python, Tableau, Power BI
+EXPERIENCE:
+- Product Analyst | Atlas Consulting | 2020-08 | 2023-08 | Built and maintained data and software solutions.
+EDUCATION:
+- M.Tech Data Science | VIT University | 2020

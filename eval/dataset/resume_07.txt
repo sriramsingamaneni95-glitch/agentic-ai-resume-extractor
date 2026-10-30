@@ -1,0 +1,9 @@
+NAME: Kiran Reddy
+EMAIL: kiran.7@example.com
+PHONE: +91-9000000106
+SUMMARY: QA Engineer with experience in Selenium, Python, SQL.
+SKILLS: Selenium, Python, SQL, Jira
+EXPERIENCE:
+- QA Engineer | Pioneer Tech | 2019-07 | present | Built and maintained data and software solutions.
+EDUCATION:
+- B.Sc Computer Science | University of Hyderabad | 2019

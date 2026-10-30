@@ -1,0 +1,9 @@
+NAME: Anika Iyer
+EMAIL: anika.4@example.com
+PHONE: +91-9000000103
+SUMMARY: Business Analyst with experience in SQL, Power BI, Excel.
+SKILLS: SQL, Power BI, Excel, Tableau
+EXPERIENCE:
+- Business Analyst | Orion Digital | 2021-04 | present | Built and maintained data and software solutions.
+EDUCATION:
+- B.E. Information Technology | Anna University | 2021

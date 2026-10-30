@@ -1,0 +1,7 @@
+*** RESUME 20 ***
+TARA RAO | tara.10@example.com | +91-9000000119
+Summary:: AI Engineer with experience in Python, LLMs, TensorFlow.
+SKILLS >> Python / LLMs / TensorFlow / FastAPI
+WORK>> Summit Cloud -- AI Engineer (2022-02 to 2023-02) -- Built and maintained data and software solutions.
+EDU >> Andhra University; M.Sc Computer Science; 2022
+Noise: ### ## tabs ---

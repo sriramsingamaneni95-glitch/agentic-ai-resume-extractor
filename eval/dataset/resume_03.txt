@@ -1,0 +1,9 @@
+NAME: Rohan Patel
+EMAIL: rohan.3@example.com
+PHONE: +91-9000000102
+SUMMARY: ML Engineer with experience in Python, TensorFlow, PyTorch.
+SKILLS: Python, TensorFlow, PyTorch, Machine Learning
+EXPERIENCE:
+- ML Engineer | Vertex Labs | 2020-03 | 2024-03 | Built and maintained data and software solutions.
+EDUCATION:
+- M.Tech Data Science | VIT University | 2020

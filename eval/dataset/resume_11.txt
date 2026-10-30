@@ -1,0 +1,7 @@
+*** RESUME 11 ***
+AARAV SHARMA | aarav.1@example.com | +91-9000000110
+Summary:: Data Analyst with experience in Python, SQL, Excel.
+SKILLS >> Python / SQL / Excel / Pandas
+WORK>> Northstar Analytics -- Data Analyst (2018-02 to 2023-02) -- Built and maintained data and software solutions.
+EDU >> SRM University; B.Tech Computer Science; 2018
+Noise: ### ## tabs ---

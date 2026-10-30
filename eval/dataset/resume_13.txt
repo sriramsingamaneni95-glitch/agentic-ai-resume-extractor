@@ -1,0 +1,7 @@
+*** RESUME 13 ***
+ROHAN PATEL | rohan.3@example.com | +91-9000000112
+Summary:: ML Engineer with experience in Python, TensorFlow, PyTorch.
+SKILLS >> Python / TensorFlow / PyTorch / Machine Learning
+WORK>> Vertex Labs -- ML Engineer (2020-04 to present) -- Built and maintained data and software solutions.
+EDU >> VIT University; M.Tech Data Science; 2020
+Noise: ### ## tabs ---

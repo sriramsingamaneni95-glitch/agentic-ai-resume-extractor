@@ -1,0 +1,9 @@
+NAME: Vikram Rao
+EMAIL: vikram.5@example.com
+PHONE: +91-9000000104
+SUMMARY: Data Scientist with experience in Python, Scikit-learn, SQL.
+SKILLS: Python, Scikit-learn, SQL, Statistics
+EXPERIENCE:
+- Data Scientist | Cedar Finance | 2022-05 | 2023-05 | Built and maintained data and software solutions.
+EDUCATION:
+- M.Sc Computer Science | Andhra University | 2022

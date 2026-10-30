@@ -1,0 +1,5 @@
+Kiran Reddy
+Email: kiran.7@example.com
+Skills: Selenium, Python
+Experience: QA Engineer at Pioneer Tech, 2019-01-present
+Education: B.Sc Computer Science, University of Hyderabad, 2019

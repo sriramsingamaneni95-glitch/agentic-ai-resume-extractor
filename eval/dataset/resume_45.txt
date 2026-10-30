@@ -1,0 +1,7 @@
+Vikram Rao
+Contact: vikram.5@example.com / +91-9000000144
+Profile: Data Scientist with experience in Python, Scikit-learn, SQL.
+Skills: Python, Scikit-learn, SQL, Statistics
+Career: 2022-09 Cedar Finance Data Scientist; moved into Data Scientist in 2024-09.
+Education: Andhra University - M.Sc Computer Science (2022)
+Note: source record defines the canonical interval.

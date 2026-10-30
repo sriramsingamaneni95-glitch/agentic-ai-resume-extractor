@@ -1,0 +1,252 @@
+{
+  "resume_01.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_02.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_03.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_04.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_05.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_06.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_07.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_08.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_09.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_10.txt": {
+    "category": "clean",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_11.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_12.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_13.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_14.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_15.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_16.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_17.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_18.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_19.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_20.txt": {
+    "category": "messy",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_21.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_22.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_23.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_24.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_25.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_26.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_27.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_28.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_29.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_30.pdf": {
+    "category": "multi-column",
+    "source_type": "pdf",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_31.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_32.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_33.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_34.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_35.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_36.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_37.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_38.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_39.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_40.txt": {
+    "category": "incomplete",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_41.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_42.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_43.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_44.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_45.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_46.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_47.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_48.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_49.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  },
+  "resume_50.txt": {
+    "category": "ambiguous",
+    "source_type": "text",
+    "ground_truth_source": "deterministic_fixture_record"
+  }
+}

@@ -1,0 +1,7 @@
+Tara Rao
+Contact: tara.10@example.com / +91-9000000149
+Profile: AI Engineer with experience in Python, LLMs, TensorFlow.
+Skills: Python, LLMs, TensorFlow, FastAPI
+Career: 2022-05 Summit Cloud AI Engineer; moved into AI Engineer in 2023-05.
+Education: Andhra University - M.Sc Computer Science (2022)
+Note: source record defines the canonical interval.

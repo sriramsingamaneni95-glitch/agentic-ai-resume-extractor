@@ -1,0 +1,5 @@
+Vikram Rao
+Email: vikram.5@example.com
+Skills: Python, Scikit-learn
+Experience: Data Scientist at Cedar Finance, 2022-08-2023-08
+Education: M.Sc Computer Science, Andhra University, 2022
