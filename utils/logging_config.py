@@ -56,4 +56,6 @@ def log_call(fn):
 def log_token_usage(response, label: str = "call"):
     usage = getattr(response, "usage", None)
     if usage:
-        logger.info(f"TOKENS[{label}] input={usage.input_tokens} output={usage.output_tokens}")
+     input_tokens = getattr(usage, "prompt_tokens", getattr(usage, "input_tokens", 0))
+     output_tokens = getattr(usage, "completion_tokens", getattr(usage, "output_tokens", 0))
+     logger.info(f"TOKENS[{label}] input={input_tokens} output={output_tokens}")
